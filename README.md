@@ -118,3 +118,4 @@ If you prefer indivisible sessions (no ability to pause) then instead of pomodor
 ## Based on the Works of optama
 
 Original Widget: https://github.com/optama/awmodoro
+updated to support Awesome 4.3

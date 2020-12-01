@@ -24,7 +24,8 @@ local properties = {
 local function play_sound()
     local sound = gears.filesystem.get_configuration_dir() ..
                       "widgets/awmodoro/" .. "ding.oga"
-    awful.spawn.easy_async_with_shell(sound)
+    awful.spawn.easy_async_with_shell("paplay " .. sound,
+                                      function(_, _, _, exit_code) end)
 end
 
 local function update(_awmodoro)
